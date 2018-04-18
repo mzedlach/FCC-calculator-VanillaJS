@@ -3,21 +3,20 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+        <script src="jquery-3.3.1.min.js"></script>
         <script src="script.js"></script>
     </head>
     <body>
-        
         <div class="wrapper">
             <div class="calc-shell">
                 
                 <div class="screen">
-                    <div class="bmo-face">
+                    <div id="bmo-face">
                         <p>This is my face!</p>
                     </div>
-                    <div class="answer">
-                        <p>This is the answer</p>
+                    <div id="answer">0
                     </div>
-                    <div class="calc-preview">
+                    <div id="calc-preview">
                         <p>This is the preview</p>
                     </div>
                 </div>
@@ -44,11 +43,13 @@
                             <div class="op" id="op-negpos">&#177;</div>
                             <div class="op" id="op-percent">&#37;</div>
 
-                            <div class="op" id="op-divide">&#247;</div>
+                            <div class="op" id="dividedBy">&#247;</div>
                             <div class="op" id="times">&#215;</div>
                             <div class="op" id="minus">&#8722;</div>
                             <div class="op" id="plus">&#43;</div>
-                            <div class="op clear" id="op-ac">AC</div>
+                                
+                            <div class="op" id="allClear">AC</div>
+                            <div class="op" id="clearEntry">CE</div>
                         </div>
                     </div>
                 </div>

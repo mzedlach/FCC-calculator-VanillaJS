@@ -90,14 +90,24 @@ body {
     border: 3px solid black;
     background-color: dodgerblue;
 }
+.op:hover { 
+    background-color: rgba(30, 144, 255, 0.37);
+}
 .equals {   
     border: 3px solid black;
     background-color: red;
+}
+.equals:hover {
+    background-color: rgba(255, 0, 0, 0.37);
 }
 .num {
     border: 3px solid black;
     background-color: yellow;
 }
+.num:hover {
+    background-color: rgba(255, 255, 0, 0.37);
+}
+
 .clear {
     width: 200px;
  /*    Why is this wierd?*/
