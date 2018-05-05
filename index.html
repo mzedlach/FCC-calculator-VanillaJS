@@ -1,62 +1,60 @@
 
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
-        <script src="jquery-3.3.1.min.js"></script>
-        <script src="script.js"></script>
+        <title>BMO Calculator</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="calc-shell">
-                
-                <div class="screen">
-                    <div id="bmo-face">
-                        <p>This is my face!</p>
-                    </div>
-                    <div id="answer">0
-                    </div>
-                    <div id="calc-preview">
-                        <p>This is the preview</p>
-                    </div>
-                </div>
-                
-                <div class="keypad">
-                    <div class="input">
-                        
-                        <div class="numbers">
-                            <div class="num" id="nine">9</div>
-                            <div class="num" id="eight">8</div>
-                            <div class="num" id="seven">7</div>
-                            <div class="num" id="six">6</div>
-                            <div class="num" id="five">5</div>
-                            <div class="num" id="four">4</div>
-                            <div class="num" id="three">3</div>
-                            <div class="num" id="two">2</div>
-                            <div class="num" id="one">1</div>
-                            <div class="num" id="zero">0</div>
-                            <div class="num" id="decimal">.</div>
-                            <div class="op equals" id="equals">&#61;</div>
-                        </div>
-                        
-                            <div class="operations">
-                            <div class="op" id="op-negpos">&#177;</div>
-                            <div class="op" id="op-percent">&#37;</div>
+        <div class="calc-shell">
 
-                            <div class="op" id="dividedBy">&#247;</div>
-                            <div class="op" id="times">&#215;</div>
-                            <div class="op" id="minus">&#8722;</div>
-                            <div class="op" id="plus">&#43;</div>
-                                
-                            <div class="op" id="allClear">AC</div>
-                            <div class="op" id="clearEntry">CE</div>
-                        </div>
-                    </div>
+            <div class="screen">
+                <div id="bmo-face">
+                    <p>This is my face!</p>
                 </div>
-                
+                <div id="answer">0
+                </div>
+                <div id="calc-preview">
+                    <p>This is the preview</p>
+                </div>
+            </div>
+
+            <div class="keypad">
+                <div class='btn-group'>
+                    <button class='op' id='allClear'>AC</button>
+                    <button class='op' id='clearEntry'>CE</button>
+                    <button class='op' id='negativePositive'>&#177;</button>
+                    <button class='op' id='division'>&#247;</button>
+<!--                        <button class='op' id='percent'>&#37;</button>-->
+                </div>
+                <div class='btn-group'>
+                    <button class='num' id='7'>7</button>
+                    <button class='num' id='8'>8</button>
+                    <button class='num' id='9'>9</button>
+                    <button class='op' id='multiplication'>&#215;</button>
+                </div>
+                <div class='btn-group'>
+                    <button class='num' id='4'>4</button>
+                    <button class='num' id='5'>5</button>
+                    <button class='num' id='6'>6</button>
+                    <button class='op' id='subtraction'>&#8722;</button>
+                </div>
+                <div class='btn-group'>
+                    <button class='num' id='1'>1</button>
+                     <button class='num' id='2'>2</button>
+                    <button class='num' id='3'>3</button>
+                    <button class='op' id='addition'>&#43;</button>
+                </div>
+                <div class='btn-group'>
+                    <button class='num' id='0'>0</button>
+                    <button class='num' id='decimal'>.</button>
+                    <button class='op equals' id='equals'>&#61;</button>
+                </div>
             </div>
         </div>
-        
     </body>
 
+    <script src="script.js"></script>
+    
 </html>
